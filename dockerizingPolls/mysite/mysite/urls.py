@@ -28,8 +28,8 @@ from polls import urls
 #    ] + debug_toolbar_urls()
 
 urlpatterns = [
-    path("polls/", include("polls.urls")), #imports our polls.url path from polls/view.py
-    path('admin/', admin.site.urls)
+    path("", include("polls.urls")), #imports our polls.url path from polls/view.py
+    path("admin/", admin.site.urls)
 ] + debug_toolbar_urls()
 
 # Cross-Origin request blocked (debug tool)
