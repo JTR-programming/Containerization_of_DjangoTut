@@ -8,6 +8,13 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 services:
+  web:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/code
+    command: python mysite/manage.py runserver 0.0.0.0:3000
   server:
     build:
       context: .
