@@ -1,4 +1,0 @@
-fastapi
-gunicorn
-django
-django-debug-toolbar
