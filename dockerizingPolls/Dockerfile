@@ -48,4 +48,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-CMD gunicorn 'mysite.wsgi' --bind=0.0.0.0:3000
+CMD gunicorn 'mysite.wsgi' --bind=localhost:3000

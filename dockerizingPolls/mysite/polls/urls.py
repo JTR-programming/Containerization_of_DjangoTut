@@ -7,7 +7,7 @@ app_name = "polls"
  # set url pattern and pathing to be set as index
 urlpatterns = [
     #ex : /polls/
-    path("", views.IndexView.as_view(), name= "index"),
+    path("polls/", views.IndexView.as_view(), name= "index"),
     # polls/5/ (where we are on question 5)
     path("<int:pk>/", views.DetailView.as_view(), name = "detail"),
     # polls/5/results/
