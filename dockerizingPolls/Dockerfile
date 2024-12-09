@@ -45,7 +45,11 @@ USER appuser
 COPY . .
 
 # Expose the port that the application listens on.
-EXPOSE 3000
+EXPOSE 8000
 
 # Run the application.
+<<<<<<< HEAD
 CMD gunicorn 'mysite.wsgi' --bind=0.0.0.0:3000
+=======
+CMD gunicorn 'mysite.wsgi' --bind=0.0.0.0:8000
+>>>>>>> parent of 43a0958 (changing from SQLite to MYSQL 1)
