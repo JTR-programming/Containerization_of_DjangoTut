@@ -21,14 +21,14 @@ from debug_toolbar.toolbar import debug_toolbar_urls
 from django.conf import settings
 from polls import urls
 
-# p8 - link to setup debug tool -> step 7
+# p8 - link to setub debug tool -> step 7
 #if not settings.TESTING:
 #    urlpatterns = [
 #        *urlpatterns,
 #    ] + debug_toolbar_urls()
 
 urlpatterns = [
-    path("polls/", include("polls.urls")), #imports our polls.url path from polls/view.py
+    path("", include("polls.urls")), #imports our polls.url path from polls/view.py
     path("admin/", admin.site.urls)
 ] + debug_toolbar_urls()
 
